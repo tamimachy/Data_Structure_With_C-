@@ -20,8 +20,9 @@ int main(){
         cout<<"Array values are: "<<array[i] << '\n';
     }
     n = insertA(array, n, 3, 25);
+    cout << "Array values are updated is: " << '\n';
     for(i=0; i<n; i++){
-        cout << "Array values are updated is: " << array[i] << '\n';
+        cout << array[i] << " ";
     }
     return 0;
 }
