@@ -3,7 +3,7 @@ using namespace std;
 string subString(string text, int start, int len){
     int i;
     string subT = "";
-    for(i=start; i<=start+len; i++){
+    for(i=start; i<start+len; i++){
         subT = subT + text[i];
     }
     return subT;
@@ -23,6 +23,6 @@ int main(){
     string s = subString(t,3,2);
     string addS = addString(t,5,"The");
     string removeS = removeString(t,3,6);
-    cout << removeS;
+    cout << s;
     return 0;
 }
